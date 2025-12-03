@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MODER GROUP PREMIUM KEY GENERATOR</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+
+    @keyframes glowing {
+        0% { box-shadow: 0 0 5px #ff0000; }
+        50% { box-shadow: 0 0 20px #ff0000, 0 0 30px #00ff00; }
+        100% { box-shadow: 0 0 5px #ff0000; }
+    }
+
+    @keyframes rainbowGlow {
+        0% { box-shadow: 0 0 10px #ff00ff; }
+        25% { box-shadow: 0 0 15px #00ffff; }
+        50% { box-shadow: 0 0 15px #ff9900; }
+        75% { box-shadow: 0 0 15px #00ff00; }
+        100% { box-shadow: 0 0 10px #ff00ff; }
+    }
+
+    @keyframes rainbowText {
+        0% { color: #ff00ff; }
+        25% { color: #00ffff; }
+        50% { color: #ff9900; }
+        75% { color: #00ff00; }
+        100% { color: #ff00ff; }
+    }
+
+    @keyframes borderFlow {
+        0% { background-position: 0%; }
+        100% { background-position: 400%; }
+    }
+
+    @keyframes barGlow {
+        0% { background-position: 0%; }
+        100% { background-position: 200%; }
+    }
+
+    body {
+        font-family: 'Courier New', monospace;
+        background-color: #0b0c10;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid #1f2b4a;
+        border-radius: 10px;
+        background-color: #1a1a2e;
+        animation: rainbowGlow 3s infinite alternate;
+    }
+
+    /* ⭐ NEW STATUS BAR ABOVE LOGO */
+    .top-status {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 15px 5px 15px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #00ff88;
+    }
+
+    .status-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #00ff88;
+        border-radius: 50%;
+        box-shadow: 0 0 8px #00ff88;
+    }
+
+    .header-box {
+        background: radial-gradient(circle at top, #1f2b4a, #0a0a1a 80%);
+        padding: 10px 15px 25px 15px;
+        text-align: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom: 2px solid #ff00ff;
+    }
+
+    .logo {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        border: 2px solid #ff00ff;
+        box-shadow: 0 0 15px #ff00ff;
+    }
+
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        animation: rainbowText 4s linear infinite;
+        text-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+    }
+
+    .console-box {
+        background-color: #000;
+        border: 1px solid #2a3e5c;
+        padding: 15px;
+        margin: 15px;
+        border-radius: 5px;
+        min-height: 150px;
+        max-height: 250px;
+        overflow-y: auto;
+    }
+
+    .console-output p {
+        margin: 5px 0;
+        font-size: 12px;
+        color: #00ff00;
+    }
+
+    .console-output .error {
+        color: #ff00ff;
+        font-weight: bold;
+    }
+
+    .form-area {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .select-server {
+        font-weight: bold;
+        color: #00ffff;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #2a3e5c;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid #3d5a80;
+    }
+
+    #main-action-btn {
+        background: linear-gradient(90deg, #ff00ff, #ff5722);
+        color: white;
+        padding: 15px 25px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        animation: glowing 1.5s infinite alternate;
+    }
+
+    #loading-text {
+        display: none;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #e5ff70;
+    }
+
+    .progress-container {
+        width: 100%;
+        height: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        background-color: #1a1a2e;
+        overflow: hidden;
+        display: none;
+    }
+
+    #progress-bar {
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg,#ff00ff,#00ffff,#ff9900);
+        background-size: 200%;
+        animation: barGlow 2s linear infinite;
+    }
+
+    #access-key-box {
+        position: relative;
+        background-color: #000;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px;
+        display: none;
+        box-shadow: 0 0 20px #00ffff;
+    }
+
+    #access-key-box::before {
+        content: "";
+        position: absolute;
+        top: -2px; left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        border-radius: 12px;
+        background: linear-gradient(90deg,#ff00ff,#00ffff,#ff9900,#00ff88);
+        background-size: 400%;
+        filter: blur(8px);
+        animation: borderFlow 6s linear infinite;
+        z-index: -1;
+    }
+
+    #access-key-display {
+        background-color: #1a1a2e;
+        border: 1px dashed #ff00ff;
+        color: #e5ff70;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    #copy-btn {
+        background-color: #00ffff;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .protocol-section {
+        background-color: #161e38;
+        padding: 20px;
+        border-top: 1px solid #3d5a80;
+    }
+
+    .protocol-section h2 {
+        color: #00ffff;
+    }
+
+    .footer-text {
+        font-size: 10px;
+        color: #555;
+        padding: 10px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    
+    <div class="header-box">
+
+        <!-- ⭐ NEW ADDED STATUS RIGHT ABOVE LOGO -->
+        <div class="top-status">
+            <div class="status-dot"></div>
+            MODER GROUP SYSTEM ONLINE
+        </div>
+
+        <img src="https://i.supaimg.com/84328cae-b9f0-4856-a560-4ee90f4566f2.jpg" class="logo">
+        <h1>MODER GROUP PREMIUM KEY</h1>
+    </div>
+
+    <div class="console-box">
+        <div id="console-output"></div>
+    </div>
+
+    <div class="form-area">
+        <label class="select-server">SELECT SECURE SERVER</label>
+        <select id="server-select">
+            <option>SERVER 1 (LOW LATENCY)</option>
+            <option>SERVER 2 (STABLE)</option>
+            <option selected>SERVER 3 (ENCRYPTED)</option>
+        </select>
+        <button id="main-action-btn" onclick="startGeneration()">GENERATE ACCESS KEY</button>
+
+        <div id="loading-text"><i class="fa fa-spinner fa-spin"></i> PROCESSING... 
+            <span id="timer">10</span>s
+        </div>
+
+        <div id="progress-container" class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <div id="access-key-box">
+        <p style="color:#00ffff;">[SUCCESS] YOUR ACTIVATED KEY:</p>
+        <div id="access-key-display"></div>
+        <button id="copy-btn" onclick="copyKey()">Copy Key</button>
+    </div>
+
+    <div class="protocol-section">
+        <h2>ACCESS PROTOCOL [SYSTEM]</h2>
+        <p><b>01</b> — SELECT SERVER.</p>
+        <p><b>02</b> — CLICK 'GENERATE ACCESS KEY'.</p>
+        <p><b>03</b> — WAIT FOR ENCRYPTION PROCESS.</p>
+    </div>
+
+    <p class="footer-text">ACCESS PROTOCOL V3.1 | DOXCI GAMER © 2025</p>
+</div>
+
+<script>
+const SHORT_LINK = "https://linksgo.in/34C8x8";
+const FINAL_KEY = "MODER-GROUP-24HOURS-ACCESS-KEY";
+const TOTAL_TIME = 10;
+let interval;
+
+function logMessage(msg, error = false) {
+    const out = document.getElementById("console-output");
+    const p = document.createElement("p");
+    p.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+    if (error) p.classList.add("error");
+    out.appendChild(p);
+    out.scrollTop = out.scrollHeight;
+}
+
+function startGeneration() {
+    try {
+        window.open(SHORT_LINK, "_blank");
+        logMessage(">>> Redirected to short link.");
+    } catch (e) {
+        logMessage(">>> Unable to open: " + e.message, true);
+    }
+
+    const btn = document.getElementById("main-action-btn");
+    btn.disabled = true;
+
+    document.getElementById("loading-text").style.display = "block";
+    document.getElementById("progress-container").style.display = "block";
+
+    let time = TOTAL_TIME;
+
+    interval = setInterval(() => {
+        time--;
+        document.getElementById("timer").textContent = time;
+        document.getElementById("progress-bar").style.width =
+            ((TOTAL_TIME - time) / TOTAL_TIME) * 100 + "%";
+
+        if (time <= 0) {
+            clearInterval(interval);
+            showKey();
+        }
+    }, 1000);
+}
+
+function showKey() {
+    document.getElementById("loading-text").style.display = "none";
+    document.getElementById("progress-container").style.display = "none";
+
+    document.getElementById("access-key-box").style.display = "block";
+    document.getElementById("access-key-display").textContent = FINAL_KEY;
+
+    logMessage("[SUCCESS] Key generated!");
+    document.getElementById("main-action-btn").disabled = false;
+}
+
+function copyKey() {
+    const key = document.getElementById("access-key-display").textContent;
+    navigator.clipboard.writeText(key);
+
+    const btn = document.getElementById("copy-btn");
+    btn.textContent = "✔ Copied!";
+    btn.style.background = "#00ff88";
+
+    setTimeout(() => {
+        btn.textContent = "Copy Key";
+        btn.style.background = "#00ffff";
+    }, 1500);
+}
+
+window.onload = () => {
+    logMessage(">>> MODER GROUP SYSTEM ONLINE");
+    logMessage("[READY] Awaiting command...");
+};
+</script>
+
+</body>
+</html>
